@@ -1,3 +1,68 @@
-body {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.title {
+  text-align: center;
+}
+
+.body-app {
+  padding: 20px 30px;
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.recent-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.scores {
+  list-style: none;
+  margin-top: 20px;
+  border: solid 2px rgb(48, 47, 47);
+}
+
+.score {
+  padding: 10px;
+}
+
+.score:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.div-add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+input {
+  padding: 5px;
+}
+
+.submit {
+  width: 30%;
 }
