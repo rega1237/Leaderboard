@@ -1,3 +1,4 @@
 import './styles.css';
+import displayScore from './modules/display.js';
 
-console.log('123');
+displayScore();
