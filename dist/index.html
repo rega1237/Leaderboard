@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <title>LeaderBoard</title>
+<script defer src="bundle.js"></script></head>
+<body>
+  <main>
+    <section class="title">
+      <h1>Leaderboard</h1>
+      </section>
+
+      <section class="body-app">
+        <div class="recent-scores">
+          <div class="recent-top">
+            <h2>
+              Recent scores
+            </h2>        
+            <button type="button" class="btn">Refresh</button>
+          </div>
+          <div class="div-scores">
+            <ul class="scores"></ul>
+          </div>
+        </div>
+
+        <div class="div-add">
+          <div class="add-top">
+            <h2>
+              Add your score
+            </h2>
+          </div>
+          <div class="add-form">
+            <form>
+              <input type="text" name="name" id="name" placeholder="Your Name">
+              <input type="text" name="score" id="score" placeholder="Your Score">
+              <button type="submit" class="submit btn">Submit</button>
+            </form>
+          </div>
+        </div>
+
+      </section>   
+    </main>
+</body>
+</html>
