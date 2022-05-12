@@ -1,4 +1,17 @@
 import './styles.css';
-import displayScore from './modules/display.js';
+import { showScores, addScores } from './modules/fetchData.js';
 
-displayScore();
+const submit = document.querySelector('.submit');
+const refresh = document.querySelector('.refresh');
+
+refresh.addEventListener('click', showScores);
+
+submit.addEventListener('click', async (e) => {
+  e.preventDefault();
+  const name = document.getElementById('name');
+  const score = document.getElementById('score');
+
+  await addScores(name.value, score.value);
+  showScores();
+  e.target.parentElement.reset();
+});
