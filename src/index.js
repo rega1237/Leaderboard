@@ -11,7 +11,17 @@ submit.addEventListener('click', async (e) => {
   const name = document.getElementById('name');
   const score = document.getElementById('score');
 
-  await addScores(name.value, score.value);
-  showScores();
-  e.target.parentElement.reset();
+  if (name.value === ''){
+    name.placeholder = 'please insert a name';
+    name.style.backgroundColor = '#ffff8f';
+    name.style.border = 'solid 1px #ff7777';
+  } else if (score.value === '') {
+    score.placeholder = 'please insert a score';
+    score.style.backgroundColor = '#ffff8f';
+    score.style.border = 'solid 1px #ff7777';
+  }else{ 
+    await addScores(name.value, score.value);
+    showScores();
+    e.target.parentElement.reset();
+  } 
 });
