@@ -1,5 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+![](./img/template.jpg)
+
 # Leader board
 
 In this project we build a application called leader board where displays scores submitted by different players. It also allows you to submit your score.
